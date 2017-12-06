@@ -14,8 +14,8 @@
 #' @importFrom readr, read_csv
 #'
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
-#' fars_read("C:/path/farsfunctions/data/accident_2013.csv.bz2")
+#' fars_read("data/accident_2013.csv.bz2")
+#' \donttest{fars_read("C:/path/farsfunctions/data/accident_2013.csv.bz2")}
 #'
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -64,9 +64,6 @@ make_filename <- function(year) {
 #'
 #' @examples
 #' fars_read_years(c(2013,2014))
-#' my_yrs <- c(2013,2014,2015))
-#' fars__read_years(my_yrs)
-#'
 fars_read_years <- function(years) {
   lapply(years, function(year) {
     file <- make_filename(year)
