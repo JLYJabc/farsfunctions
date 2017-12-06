@@ -124,7 +124,7 @@ fars_summarize_years <- function(years) {
 #' @return A map of the state, where accidents are marked
 #'
 #' @examples
-#' \donttest{fars_map_state(44,2014)}
+#' \donttest{fars_map_state(40,2014)}
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
   data <- fars_read(filename)
