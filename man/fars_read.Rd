@@ -28,8 +28,8 @@ Loads a datafile from disk. If no path is provided the current directory is
 used. An error is given if the file does not exist.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
-fars_read("C:/path/farsfunctions/data/accident_2013.csv.bz2")
+fars_read("data/accident_2013.csv.bz2")
+\donttest{fars_read("C:/path/farsfunctions/data/accident_2013.csv.bz2")}
 
 fars_read("accident_2013.csv.bz2")
 fars_read("C:/Users/My_filepath/accident_2013.csv.bz2")

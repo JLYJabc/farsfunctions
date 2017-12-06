@@ -35,9 +35,6 @@ function will never fail, as whole function is run with tryCatch.
 }
 \examples{
 fars_read_years(c(2013,2014))
-my_yrs <- c(2013,2014,2015))
-fars__read_years(my_yrs)
-
 fars_read_years(c(2013,2014))
 my_yrs <- c(2013,2014,2015))
 fars__read_years(my_yrs)

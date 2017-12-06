@@ -36,6 +36,6 @@ year is not valid. A message is provided if there were no accidents in a
 paritcular state and year.
 }
 \examples{
-fars_map_state(44,2014)
+\donttest{fars_map_state(44,2014)}
 fars_map_state(44,2014)
 }
