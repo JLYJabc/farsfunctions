@@ -9,22 +9,39 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+This vignette serves to illustrate how to use the farsfunctions package. The farsfunctions package, contains geodata for car accidents for each state in the US for the years 2013-2015. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The main function of the package is to visualize the accidents using the fars_map_state() function. The function takes two arguments, state number and year.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+> fars_map_state(state.num = 44, year = 2013)
 
-```{r cars}
-summary(cars)
+```{r map, echo = FALSE}
+source("R/fars_functions.R")
+fars_map_state(state.num = 44, year = 2013)
 ```
 
-## Including Plots
+Another usefull function in the package is fars_summarize_years, which given a list of years, generates a summary table of the accidents for each month for the given years.
 
-You can also embed plots, for example:
+> fars_summarize_years(c(2014,2015))
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+In addition to the main functions, a couple of helper functions are also included in the package.
+fars_read_years also takes a list of years and returns data for the given years (Not shown)
+
+> fars_read_years(c(2013,2014))
+
+```{r read years, echo = FALSE}
+fars_read_years(c(2013,2014))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Two other small functions are make_filename which takes a year as input, and returns the corresponding filename+incl. path, and fars_read, which given a filename reads the coresponding data into memory.
+
+> make_filename(2013) 
+> fars_read()
+```{r filename}
+make_filename(2013)
+
+fars_read("data/accident_2013.csv.bz2")
+```
+
+
+
