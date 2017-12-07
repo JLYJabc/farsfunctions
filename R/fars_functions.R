@@ -9,9 +9,8 @@
 #'
 #' @return a dataframe of class tbl_df
 #'
-#' @importFrom dplyr, tbl_df
-#'
-#' @importFrom readr, read_csv
+#' @importFrom dplyr tbl_df
+#' @importFrom readr read_csv
 #'
 #'
 #' @examples
@@ -56,9 +55,9 @@ make_filename <- function(year) {
 #'
 #' @param years, a list of years (should be a list of integers)
 #'
-#' @importFrom dplyr, select, mutate, tbl_df
-#' @importFrom readr, read_csv
-#' @importFrom magrittr, %>%
+#' @importFrom dplyr select mutate tbl_df
+#' @importFrom readr read_csv
+#' @importFrom dplyr %>%
 #'
 #' @return
 #' A list of lists of data for each valid year in the input list 'years'. The data
@@ -94,7 +93,7 @@ fars_read_years <- function(years) {
 #' @importFrom readr read_csv
 #' @importFrom tidyr spread
 #' @importFrom dplyr bind_rows summarize select mutate tbl_df
-#' @importFrom magrittr %>%
+#' @importFrom dplyr %>%
 #'
 #' @examples
 #' fars_summarize_years(c(2014,2015))
@@ -117,12 +116,12 @@ fars_summarize_years <- function(years) {
 #' @param state.num, an integer, must be less than 57.
 #' @param year, an integer or string coercible to an integer
 #'
-#' @importFrom maps, map
-#' @importFrom graphics, points
+#' @importFrom maps map
+#' @importFrom graphics points
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df filter
 #' @importFrom tidyr spread
-#' @importFrom magrittr %>%
+#' @importFrom dplyr %>%
 #'
 #' @return A map of the state, where accidents are marked
 #'
