@@ -12,10 +12,9 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports:
   magrittr
-Suggests:
   dplyr,
   readr,
-  graphics,
-  maps,
-  readr,
   tidyr
+  graphics,
+  maps
+

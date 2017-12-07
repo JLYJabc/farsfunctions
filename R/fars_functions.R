@@ -13,7 +13,6 @@
 #'
 #' @importFrom readr, read_csv
 #'
-#' @export
 #'
 #' @examples
 #' fars_read("data/accident_2013.csv.bz2")
@@ -56,8 +55,6 @@ make_filename <- function(year) {
 #' function will never fail, as whole function is run with tryCatch.
 #'
 #' @param years, a list of years (should be a list of integers)
-#'
-#' @export
 #'
 #' @importFrom dplyr, select, mutate, tbl_df
 #' @importFrom readr, read_csv
@@ -102,7 +99,6 @@ fars_read_years <- function(years) {
 #' @examples
 #' fars_summarize_years(c(2014,2015))
 fars_summarize_years <- function(years) {
-  library('magrittr')
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
     dplyr::group_by(year, MONTH) %>%
