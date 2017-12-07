@@ -17,7 +17,7 @@ Loads a datafile from disk. If no path is provided the current directory is
 used. An error is given if the file does not exist.
 }
 \examples{
-fars_read("data/accident_2013.csv.bz2")
-\donttest{fars_read("C:/path/farsfunctions/data/accident_2013.csv.bz2")}
-
+\dontrun{
+fars_read("./data/accident_2013.csv.bz2")
+}
 }
