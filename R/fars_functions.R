@@ -14,8 +14,7 @@
 #'
 #'
 #' @examples
-#' fars_read("data/accident_2013.csv.bz2")
-#' \donttest{fars_read("C:/path/farsfunctions/data/accident_2013.csv.bz2")}
+#' fars_read("accident_2013.csv.bz2")
 #'
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -41,7 +40,7 @@ fars_read <- function(filename) {
 #'
 make_filename <- function(year) {
   year <- as.integer(year)
-  sprintf("data/accident_%d.csv.bz2", year)
+  sprintf("accident_%d.csv.bz2", year)
 }
 
 #' Read in data for multiple years
