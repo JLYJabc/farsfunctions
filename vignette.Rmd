@@ -16,6 +16,7 @@ The main function of the package is to visualize the accidents using the fars_ma
 > fars_map_state(state.num = 44, year = 2013)
 
 ```{r map, echo = FALSE}
+source("R/fars_functions.R")
 setwd(system.file("extdata", package = "farsfunctions"))
 fars_map_state(state.num = 44, year = 2013)
 ```
@@ -40,8 +41,7 @@ Two other small functions are make_filename which takes a year as input, and ret
 > fars_read()
 ```{r filename}
 make_filename(2013)
-filename <- system.file("extdata/accident_2013.csv.bz2", package = "farsfunctions")
-fars_read(filename)
+fars_read("data/accident_2013.csv.bz2")
 ```
 
 
