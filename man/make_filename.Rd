@@ -17,6 +17,7 @@ Constructs a filename of the type accident_'year'_csv.z2, where year is
 given as input.
 }
 \examples{
+\dontrun{
 make_filename(1996)
-
+}
 }

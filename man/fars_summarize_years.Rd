@@ -17,5 +17,7 @@ Given a list of years, loads data associated with the years, selects and
 summarizes relevant data.
 }
 \examples{
+\dontrun{
 fars_summarize_years(c(2014,2015))
+}
 }

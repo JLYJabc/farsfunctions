@@ -20,5 +20,7 @@ A warning message is provided if data does not exist for a given year. This
 function will never fail, as whole function is run with tryCatch.
 }
 \examples{
+\dontrun{
 fars_read_years(c(2013,2014))
+}
 }

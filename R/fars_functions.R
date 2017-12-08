@@ -37,8 +37,9 @@ fars_read <- function(filename) {
 #' @return a string
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(1996)
-#'
+#' }
 make_filename <- function(year) {
   year <- as.integer(year)
   sprintf("accident_%d.csv.bz2", year)
@@ -63,7 +64,9 @@ make_filename <- function(year) {
 #' A list of lists of data for each valid year in the input list 'years'. The data
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(c(2013,2014))
+#' }
 fars_read_years <- function(years) {
   lapply(years, function(year) {
     file <- make_filename(year)
@@ -96,7 +99,9 @@ fars_read_years <- function(years) {
 #' @importFrom dplyr %>%
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(c(2014,2015))
+#' }
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
@@ -127,7 +132,9 @@ fars_summarize_years <- function(years) {
 #'
 #' @export
 #' @examples
+#' \dontrun{
 #' fars_map_state(40,2014)
+#' }
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
   data <- fars_read(filename)

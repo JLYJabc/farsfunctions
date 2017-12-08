@@ -21,5 +21,7 @@ year is not valid. A message is provided if there were no accidents in a
 paritcular state and year.
 }
 \examples{
+\dontrun{
 fars_map_state(40,2014)
+}
 }
