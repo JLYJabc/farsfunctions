@@ -6,7 +6,7 @@ output:
   html_document: default
   pdf_document: default
 vignette: >
-  %\VignetteIndexEntry{Overview of the FARS package}
+  %\VignetteIndexEntry{Vignette for fars functions}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

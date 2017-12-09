@@ -17,7 +17,8 @@ Imports:
   graphics,
   maps,
   testthat,
-  roxygen2
+  roxygen2,
+  devtools
 Suggests:
   knitr,
   rmarkdown,
