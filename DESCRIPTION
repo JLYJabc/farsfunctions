@@ -16,7 +16,8 @@ Imports:
   tidyr,
   graphics,
   maps,
-  testthat
+  testthat,
+  roxygen2
 Suggests:
   knitr,
   rmarkdown,
