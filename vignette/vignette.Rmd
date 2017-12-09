@@ -15,7 +15,7 @@ Load packages
 ```{r load, echo = FALSE}
 library(dplyr, quietly = T)
 library(tidyr, quietly = T)
-source("../R/fars_functions.R")
+library(farsfunctions, quietly = T)
 ```
 fars_map_state() is the main function of the package, and it visualizes accidents The function takes two arguments, state number and year.
 
