@@ -17,4 +17,8 @@ Imports:
   graphics,
   maps,
   testthat
-
+Suggests:
+  knitr,
+  rmarkdown,
+Vignettebuilder:
+  knitr
