@@ -15,5 +15,6 @@ Imports:
   readr,
   tidyr,
   graphics,
-  maps
+  maps,
+  testthat
 
