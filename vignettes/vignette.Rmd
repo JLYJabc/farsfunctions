@@ -5,6 +5,10 @@ date: "6 dec 2017"
 output:
   html_document: default
   pdf_document: default
+vignette: >
+  %\VignetteIndexEntry{Overview of the FARS package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}
