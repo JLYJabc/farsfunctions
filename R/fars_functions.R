@@ -1,4 +1,4 @@
-utils::globalVariables(c("year","MONTH", "STATE"))
+utils::globalVariables(c("year","MONTH", "STATE", "n"))
 #'
 #' Reads data
 #'

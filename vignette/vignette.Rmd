@@ -13,7 +13,6 @@ This vignette serves to illustrate how to use the farsfunctions package. The far
 
 Load packages
 ```{r load, echo = FALSE}
-utils::globalVariables("n")
 library(dplyr, quietly = T)
 library(tidyr, quietly = T)
 library(farsfunctions, quietly = T)
